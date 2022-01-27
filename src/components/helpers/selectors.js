@@ -26,10 +26,6 @@ export function getInterviewersForDay(state, day) {
   }
 
   const findInterviewerID = filteredDay.interviewers.map(id => state.interviewers[id]);
-  // findInterviewerID.map(interviewer => {interviewer})
-
-  console.log("findinterviewerID--> ", findInterviewerID)
-  console.log("filteredDay-->v", filteredDay)
 
   return findInterviewerID;
 }
