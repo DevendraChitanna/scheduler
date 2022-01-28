@@ -65,7 +65,7 @@ export default function Appointment(props) {
       {mode === EMPTY && <Empty onAdd={() => transition(CREATE)} />}
       {mode === SAVING && <Status message={"SAVING"} />}
       {mode === ERROR_DELETE && <Error message="Could not cancel appointment." onClose={() => transition(SHOW)} />}
-      {mode === ERROR_SAVE && <Error message="Could not cancel appointment." onClose={() => transition(back)} />}
+      {mode === ERROR_SAVE && <Error message="Could not cancel appointment." onClose={() => transition(SHOW)} />}
       {mode === DELETING && <Status message={"DELETING"} />}
       {mode === EDIT && (
         <Form
