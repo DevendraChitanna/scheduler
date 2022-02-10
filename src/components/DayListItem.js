@@ -19,7 +19,7 @@ export default function DayListItem(props) {
 
   const dayClass = classNames("day-list__item", {
     "day-list__item--selected": selected,
-    "day-list__item--full": spots === 0
+    "day-list__item--full": spots === 0,
 
   });
 

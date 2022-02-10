@@ -61,7 +61,7 @@ export default function useApplicationData() {
         ...state.appointments,
         [id]: appointment,
       };
-      setState({ ...state, appointments, days: updateDays(appointments) })
+      setState({ ...state, appointments, days: updateDays(appointments) });
     });
   };
 
